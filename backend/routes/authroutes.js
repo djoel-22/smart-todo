@@ -4,6 +4,10 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User"); // ✅ ensure models/User.js exists
 
+router.get("/test", (req, res) => {
+  res.json({ message: "API working" });
+});
+
 // ---------------- USER REGISTER ----------------
 router.post("/register", async (req, res) => {
   try {
