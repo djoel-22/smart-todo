@@ -1,4 +1,5 @@
-// frontend/src/api/base.js
-const API_BASE = process.env.REACT_APP_API_URL || ""; // if empty, use relative paths
+const API_BASE =
+  process.env.REACT_APP_API_URL ||
+  "https://smart-todo-backend-g5fz.onrender.com/api";
 
-module.exports = { API_BASE };
+export default API_BASE;
